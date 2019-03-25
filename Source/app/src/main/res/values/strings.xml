@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Tankify</string>
+    <string name="title_activity_car_view">CarView</string>
 </resources>
