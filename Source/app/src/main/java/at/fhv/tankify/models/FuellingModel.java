@@ -10,6 +10,16 @@ public class FuellingModel extends EntityModel{
     private double amount;
     private double price;
     private double mileage;
+    private int vehicleId;
+
+    public FuellingModel(Location location, LocalDateTime dateTime, double amount, double price, double mileage, int vehicleId) {
+        this.location = location;
+        this.dateTime = dateTime;
+        this.amount = amount;
+        this.price = price;
+        this.mileage = mileage;
+        this.vehicleId = vehicleId;
+    }
 
     public Location getLocation() {
         return location;
@@ -29,5 +39,9 @@ public class FuellingModel extends EntityModel{
 
     public double getMileage() {
         return mileage;
+    }
+
+    public int getVehicleId() {
+        return vehicleId;
     }
 }

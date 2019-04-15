@@ -18,7 +18,14 @@ public class AddFuellingUseCase implements IAddFuellingUseCase {
 
     @Override
     public AddFuellingResponse Handle(AddFuellingRequest value) {
-        return null;
+        // TODO Validate entity first
+        try {
+            fuellingRepository.add(value.getModel());
+        } catch (Exception e)
+        {
+            return new AddFuellingResponse(false);
+        }
+        return new AddFuellingResponse(true, value.getModel());
     }
 
 }

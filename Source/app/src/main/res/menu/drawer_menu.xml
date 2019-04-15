@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_car"
+            android:icon="@drawable/ic_car"
+            android:title="Car" />
+
+        <item
+            android:id="@+id/nav_fuelings"
+            android:icon="@drawable/ic_gas_station"
+            android:title="Fuelings" />
+
+        <item
+            android:id="@+id/nav_statistics"
+            android:icon="@drawable/ic_chart"
+            android:title="Statistics" />
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_format_list"
+                android:title="Share" />
+        </menu>
+    </item>
+</menu>

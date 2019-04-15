@@ -7,4 +7,8 @@ public class AddFuellingResponse extends BaseEntityResponse<FuellingModel> {
     public AddFuellingResponse(boolean success, FuellingModel model) {
         super(success, model);
     }
+
+    public AddFuellingResponse(boolean success) {
+        super(success, null);
+    }
 }

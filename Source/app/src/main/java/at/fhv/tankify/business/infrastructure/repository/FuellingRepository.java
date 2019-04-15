@@ -1,7 +1,9 @@
 package at.fhv.tankify.business.infrastructure.repository;
 
 import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 
 import at.fhv.tankify.business.core.repository.BindableRepository;
 import at.fhv.tankify.business.core.repository.IFuellingRepository;
@@ -9,6 +11,8 @@ import at.fhv.tankify.models.FuellingModel;
 import at.fhv.tankify.models.VehicleModel;
 
 public class FuellingRepository extends BindableRepository<FuellingModel> implements IFuellingRepository {
+
+    private Set<FuellingModel> repo = new HashSet<>();
 
     @Override
     public List<FuellingModel> getAll() {

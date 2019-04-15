@@ -18,6 +18,6 @@ public class AddVehicleUseCase implements IAddVehicleUseCase {
     public AddVehicleResponse Handle(AddVehicleRequest value) {
 
 
-        return new AddVehicleResponse(false, value.getModel());
+        return new AddVehicleResponse(true, value.getModel());
     }
 }
