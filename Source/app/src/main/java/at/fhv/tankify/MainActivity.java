@@ -34,10 +34,13 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         drawer.addDrawerListener(toggle);
         toggle.syncState();
 
+        // TODO bug in floating action button ... CarFragment and fragment_car
+        /*
         if (savedInstanceState == null) {
             getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new CarFragment()).commit();
             navigationView.setCheckedItem(R.id.nav_car);
         }
+        */
     }
 
     @Override
