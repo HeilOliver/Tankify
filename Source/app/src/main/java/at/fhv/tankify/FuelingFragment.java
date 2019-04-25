@@ -10,6 +10,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.ListView;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -27,18 +28,15 @@ public class FuelingFragment extends Fragment {
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_fueling, container, false);
 
+        final ListView list = view.findViewById(R.id.fuelList);
+
         //Todo: bringin Floating Button to work
         final Button fbutton = view.findViewById(R.id.addFuelingButton);
-        fbutton.setOnClickListener(new View.OnClickListener(){
-
-            @Override
-            public void onClick(View v) {
-                FragmentTransaction fragmentTransaction = getActivity().getSupportFragmentManager().beginTransaction();
-                fragmentTransaction.replace(R.id.fragment_container,new addFueling());
-                fragmentTransaction.commit();
-            }
+        fbutton.setOnClickListener(v -> {
+            FragmentTransaction fragmentTransaction = getActivity().getSupportFragmentManager().beginTransaction();
+            fragmentTransaction.replace(R.id.fragment_container,new addFueling());
+            fragmentTransaction.commit();
         });
-
         return view;
     }
 }

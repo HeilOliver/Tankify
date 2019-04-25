@@ -6,7 +6,7 @@
 
 
     <ListView
-        android:id="@+id/lvToDoList"
+        android:id="@+id/fuelList"
         android:layout_width="match_parent"
         android:layout_height="match_parent"></ListView>
 
