@@ -19,6 +19,7 @@ public class CarFragment extends Fragment {
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_car, container, false);
 
+        /*
         FloatingActionButton fab = view.findViewById(R.id.fab);
 
         fab.setOnClickListener(new View.OnClickListener() {
@@ -27,6 +28,7 @@ public class CarFragment extends Fragment {
                 startActivity(new Intent(getActivity(), CarFragment.class));
             }
         });
+        */
 
         return view;
     }
